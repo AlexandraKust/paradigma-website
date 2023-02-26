@@ -89,6 +89,13 @@
   .header.active::after, .header.fixed::after {
     opacity: 1;
   }
+  .header.active .header__call-text,
+  .header.active .header__call-btn,
+  .header.active .header__number, .header.fixed .header__call-text,
+  .header.fixed .header__call-btn,
+  .header.fixed .header__number {
+    color: var(--main-color);
+  }
   .header__row {
     position: relative;
     z-index: 45;
@@ -191,9 +198,6 @@
     height: 0.4rem;
     margin-right: 0.5rem;
   }
-  .header__call-text.active, .header__call-text.fixed {
-    color: var(--main-color);
-  }
   .header__number {
     margin: 0;
     font-size: 1.2rem;
@@ -202,9 +206,6 @@
   }
   .header__number::after {
     display: none;
-  }
-  .header__number.active, .header__number.fixed {
-    color: var(--main-color);
   }
   .header__call-btn {
     font-size: 0.6rem;
@@ -216,9 +217,6 @@
     width: 0.6rem;
     height: 0.6rem;
     margin-left: 0.3rem;
-  }
-  .header__call-btn.active, .header__call-btn.fixed {
-    color: var(--main-color);
   }
   .header__burger {
     display: block;

@@ -99,6 +99,12 @@
 			&::after {
 				opacity: 1;
 			}
+
+			.header__call-text,
+			.header__call-btn,
+			.header__number {
+				color: var(--main-color);
+			}
 		}
 
 		&__row {
@@ -224,11 +230,6 @@
 				height: 0.4rem;
 				margin-right: 0.5rem;
 			}
-
-			&.active,
-			&.fixed {
-				color: var(--main-color);
-			}
 		}
 
 		&__number {
@@ -239,11 +240,6 @@
 
 			&::after {
 				display: none;
-			}
-
-			&.active,
-			&.fixed {
-				color: var(--main-color);
 			}
 		}
 
@@ -257,11 +253,6 @@
 				width: 0.6rem;
 				height: 0.6rem;
 				margin-left: 0.3rem;
-			}
-
-			&.active,
-			&.fixed {
-				color: var(--main-color);
 			}
 		}
 

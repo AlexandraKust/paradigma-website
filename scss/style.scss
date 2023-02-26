@@ -822,6 +822,11 @@ body {
 }
 
 .popup {
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+
 	&__bg {
 		background-color: rgba($color: #000, $alpha: 0.7);
 		position: absolute;
