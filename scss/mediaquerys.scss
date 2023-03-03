@@ -1,5 +1,9 @@
 // адаптив общих стилей
 @media (max-width: 992px) {
+	html {
+		font-size: 3.125vw;
+	}
+	
 	.scroll {
 		display: none;
 	}
